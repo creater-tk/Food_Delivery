@@ -1,0 +1,27 @@
+.app-download{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 60px;
+}
+.app-download p{
+  font-size: 3.5vw;
+  text-align: center;
+}
+.app-download hr{
+  width: 100%;
+}
+.app-download-platforms{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.app-download-platforms img{
+  width: 20vw;
+}
+.app-download-platforms img:hover{
+  transform: scale(1.1);
+  transition: .3s;
+}

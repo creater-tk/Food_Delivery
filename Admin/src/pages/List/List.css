@@ -1,0 +1,59 @@
+.food-list{
+  width: 80%;
+  padding: 20px 4%;
+  height: 80vh;
+}
+.title{
+  font-size: 2.5vw;
+  margin-bottom: 20px;
+}
+.list-table{
+  height: 80vh;
+  border-top: 0px;
+  border-radius: 10px;
+}
+.Items-list{
+  height: 65VH;
+  overflow-y: auto;
+  scroll-snap-type: none;
+  scrollbar-width: none;
+}
+.list-table-formate{
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 0.5fr;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+  border: 1px solid gray;
+  font-size: 15px;
+  border-radius: 8px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.empty-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: gray;
+}
+.list-table-formate.title{
+  background-color: gray;
+}
+.list-table-formate img{
+  width: 50px;
+}
+.cursor{
+  cursor: pointer;
+  color: orangered;
+  font-weight: bold;
+  margin-left: 10px;
+}
+@media (max-width:600px) {
+  .list-table-formate{
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 15px;
+  }
+  .list-table-formate.title{
+    display: none;
+  }
+}

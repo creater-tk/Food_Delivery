@@ -1,0 +1,72 @@
+.header{
+  display: flex;
+  height: 34vw;
+  margin: 50px auto;
+  border-radius: 30px;
+  background-size: cover;
+  background: url('/header_img.png');
+  background-size: cover;
+  position: relative;
+}
+.header-contents{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+  max-width: 50%;
+  bottom: 20%;
+  left: 10%;
+  animation: fadeIn 3s;
+  text-align: start;
+}
+
+.header-contents h2{
+  font-size: max(4.5vw, 22px);
+  font-weight: 500;
+}
+.header-contents button{
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 3px 3px 4px black;
+}
+button:hover{
+  cursor: pointer;
+}
+button:active{
+  box-shadow: inset 3px 3px 4px black;
+}
+
+@media screen, (max-width: 1050px) {
+  .header{
+    height: 38vw;
+  }
+  .header-contents h2{
+    font-size: max(4.5vw, 22px);
+    font-weight: 500;
+  }
+  .header-contents p{
+    font-size: 1.2vw;
+  }
+
+}
+@media  (max-width: 750px) {
+  .header-contents {
+      max-width: 55%;
+  }
+  .header-contents p{
+    display: none;
+  }
+  .header-contents h2{
+      font-size: 4vw;
+  }
+  .header-contents button{
+    width: 10vw;
+    font-size: 1vw;
+    border-radius: 10px;
+    padding: 0px;
+    height: 3vw;
+  }
+
+}

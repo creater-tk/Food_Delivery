@@ -1,0 +1,147 @@
+.NavBar{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 30px;
+  height: 80px;
+  margin-bottom: 50px;
+  
+}
+.logo{
+  margin-right: 10px;
+}
+.selector{
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+}
+.selector:hover{
+  cursor: pointer;
+}
+.navbar-right{
+  display: flex;
+  gap: 45px;
+  align-items: center;
+  height: 40px;
+}
+.signIn-btn{
+  width: 8vw;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(182, 239, 91, 0.668);
+  color: black;
+}
+.signIn-btn:hover{
+  cursor: pointer;
+  background-color: lightblue;
+  transition: 200ms;
+}
+.dot{
+  color: orangered;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: -18px;
+  margin-top: -15px;
+  background: transparent;
+}
+.navbar-search-icon{
+  display: flex;
+}
+.active{
+  text-decoration: underline;
+  color: red;
+}
+.cart-img{
+  cursor: pointer;
+}
+
+.navbar-profile{
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-profile-dropdown{
+  position: absolute;
+  display: none;
+  right: 0;
+  z-index: 1;
+}
+.sub-fields{
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.navbar-profile:hover .nav-profile-dropdown{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  background-color: whitesmoke;
+  padding: 12px 25px;
+  border-radius: 4px;
+  border: 1px solid orangered;
+  outline: 2px solid white;
+  list-style: none;
+}
+.nav-profile-dropdown img{
+  width: 20px;
+}
+.nav-profile-dropdown li:hover{
+  color: orangered;
+  font-weight: bold;
+}
+@media  (max-width: 1050px) {
+  .NavBar .logo{
+     width: 140px;
+  }
+  .selector{
+    gap: 20px;
+    font-size: 17px;
+  }
+  .navbar-right{
+    gap: 30px;
+
+  }
+  .navbar-right img{
+    width: 22px;
+  }
+}
+
+@media  (max-width: 800px) {
+  .NavBar{
+    padding: 10px;
+  }
+  .logo-img{
+    width: 20vw;
+    height: 20px;
+    margin-top: 20px;
+  }
+  .signIn-btn{
+    width: 80px;
+  }
+  .dot{
+    font-size: 12px;
+    margin-left: -10px;
+    color: orangered;
+  }
+  .navbar-right img{
+    width: 15px;
+  }
+  .selector{
+    display: none;
+  }
+  .navbar-right button{
+    padding: 6px 18px;
+    font-size: 2.2vw;
+    max-width: 15vw;
+    height: 30px;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+  }
+  .navbar-right{
+    gap: 15px;
+  }
+}
